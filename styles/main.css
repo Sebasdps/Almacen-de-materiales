@@ -1,0 +1,294 @@
+/* estilos por etiqueta */
+
+body {
+  font-family: "PT Sans", sans-serif;
+}
+
+h1 {
+  color: #808080;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+h2 {
+  font-size: 20px;
+  font-style: italic;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+section {
+  margin: auto;
+  max-width: 80%;
+}
+
+/* header */
+
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 20px 20px 0 20px;
+}
+
+.header__logo {
+  margin-right: 20px;
+}
+
+/* imagen divisoria */
+
+.imagen-divisoria {
+  height: 60px;
+  margin: auto;
+}
+
+.image-divisoria img {
+  max-width: 80%;
+}
+
+/* banner */
+
+.banner {
+  color: rgb(62, 80, 181);
+  text-align: center;
+}
+
+.banner h2 {
+  border-bottom: 3px solid black;
+  padding: 0 15px 15px;
+}
+
+/* informativo */
+
+.informativo {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.informativo__image {
+  margin: 20px;
+}
+
+.informativo__textos {
+  border: 4px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.informativo__nombre-empresa {
+  text-align: center;
+}
+
+/* descripción */
+
+.descripcion {
+  background: linear-gradient(
+    180deg,
+    rgba(80, 80, 80, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  border: 3px solid black;
+  border-radius: 10%;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* registro */
+
+.registro {
+  display: flex;
+}
+
+.registro div {
+  display: flex;
+  flex-direction: column;
+}
+
+.registro picture {
+  display: flex;
+  justify-content: space-around;
+}
+
+.registro img {
+  height: 80px;
+  max-width: 100px;
+}
+
+.registro__formulario {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100%;
+  padding: 20px;
+}
+
+.registro__formulario input {
+  width: 80%;
+}
+
+.registro a {
+  color: black;
+}
+
+.registro div {
+  align-items: center;
+  display: flex;
+  margin: 20px auto;
+  width: fit-content;
+}
+
+.registro button {
+  background-color: lightgray;
+  border-color: black;
+  border-radius: 5px;
+  border-width: 3px;
+  font-weight: bolder;
+  margin: 20px;
+  padding: 5px 20px;
+  text-decoration: underline;
+}
+
+.registro__texto {
+  color: gray;
+  font-weight: bolder;
+  margin: auto;
+  text-align: center;
+  width: 30%;
+}
+
+/* footer */
+
+.footer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.footer__contenido {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+}
+
+.footer__contenido img {
+  margin-right: 20px;
+}
+
+.footer__contacto-image {
+  margin-right: 20px;
+  width: 80px;
+}
+
+.footer__mapa-image {
+  width: 150px;
+}
+
+@media (min-width: 768px) {
+  .header {
+    margin-bottom: 20px;
+  }
+
+  .informativo,
+  .footer,
+  .footer__contenido {
+    flex-direction: row;
+  }
+
+  .descripcion {
+    border-radius: 65px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .registro__formulario input {
+    width: 55%;
+  }
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .header,
+  .informativo__image,
+  .informativo__textos,
+  .descripcion,
+  .registro button,
+  .registro__formulario {
+    margin: 30px auto;
+  }
+
+  .banner h2 {
+    padding: 0 25px 25px;
+  }
+
+  .informativo__textos,
+  .descripcion,
+  .registro__formulario {
+    padding: 20px auto;
+  }
+
+  .registro div {
+    margin: 30px auto;
+  }
+
+  .informativo__nombre-empresa {
+    margin: 35px;
+  }
+
+  .registro picture {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .registro__formulario input {
+    width: 300px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .registro picture {
+    justify-content: space-evenly;
+  }
+
+  .header,
+  .informativo__image,
+  .informativo__textos,
+  .descripcion,
+  .registro button {
+    margin: 40px auto;
+  }
+
+  .banner h2 {
+    padding: 0 35px 35px;
+  }
+
+  .informativo__textos,
+  .descripcion,
+  .registro__formulario {
+    padding: 30px auto;
+  }
+
+  .registro div {
+    margin: 40px auto;
+  }
+}
